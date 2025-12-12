@@ -1,0 +1,13 @@
+@startuml
+
+class IndexInfo{
+    + string code
+    + string name
+    + string description
+}
+
+interface IndexDataProvider {
+    +{abstract} vector<IndexInfo> getIndexList() const = 0
+}
+
+@enduml
